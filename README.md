@@ -80,10 +80,3 @@ params:
 
 ## Sources
 * Icons from [Font Awesome](https://fontawesome.com/icons?d=gallery)
-
-
-REFERENCES:
-  https://github.com/gohugoio/hugoThemes#themetoml
-  https://github.com/spech66/bootstrap-bp-hugo-startpage
-  https://github.com/yoshiharuyamashita/blackburn
-
