@@ -7,7 +7,7 @@ A clear and responsive theme for [Hugo](//gohugo.io/) witch provides a dynamic e
 
 
 ## Screenshot
-.
+![startPageColumns = false](https://raw.githubusercontent.com/rz3n/hugo-theme-freshstart/master/images/screenshot.png)
 
 
 ## Installation
