@@ -1,0 +1,177 @@
+/* --------------------------
+ * global
+*/
+
+* {
+  color: rgb(200, 200, 200);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(/images/bg.jpg) top fixed no-repeat;
+  background-size: cover;
+  content-visibility: auto;
+  font-size: 16px;
+  font-family: system-ui, sans-serif;
+  font-weight: 400;
+}
+
+a:link, a:active, a:hover { text-decoration: none; }
+
+h3 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+} 
+
+
+/* --------------------------
+ * efects
+*/
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.shadow { box-shadow: 10px 20px 50px 10px #000; }
+
+
+/* --------------------------
+ * header
+*/
+header {
+  backdrop-filter: blur(.2rem);
+  background-color: rgba(0,0,0, 0.5);
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+header nav {
+  width: fit-content;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+header nav ul li {
+  margin: 0.1rem 0.3rem;
+}
+
+.datetime {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.date {
+  padding: 0 0.5rem;
+  border-right: solid 1px;
+  width: fit-content;
+}
+
+.time {
+  padding: 0 0.5rem;
+  width: fit-content;
+}
+
+
+/* --------------------------
+ * search
+*/
+.search {
+  backdrop-filter: blur(.1rem);
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 2rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  text-align: center;
+  width: 30vw;
+}
+.searchbox {
+  display: flex;
+  flex-direction: column;
+}
+.searchbox form {
+  padding: 0.5rem;
+}
+.searchbox input {
+  background: none;
+  border: 0;
+  border-bottom: solid 3px #f44336;
+  line-height: 26px;
+  padding: 4px;
+  width: 70%;
+}
+
+
+/* --------------------------
+ * cards
+*/
+.cards {
+  display: grid;
+  font-size: 0.7rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  margin: 0 10rem;
+}
+
+.card {
+  backdrop-filter: blur(.2rem);
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 1rem;
+  margin: 1em;
+  padding: 1rem;
+}
+
+.card:hover h3 i {
+  color: rgb(244, 67, 54);
+  transition: all .4s linear;
+}
+
+.card h3 {
+  text-transform: lowercase;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.card ul {
+  list-style: none;
+  column-gap: 0.3rem;
+  columns: 4 100px;
+ 
+}
+
+.card ul li {
+  margin: 0.2rem;
+  width: max-content;
+  height: max-content;
+}
+
+.card ul li * {
+  color: rgb(200, 200, 200);
+  transition: all .3s linear;
+}
+
+.card ul li:hover * {
+  color: #f44336;
+}
+
+.card ul li::first-letter,
+.card ul li i {
+  color: #f44336;
+  font-weight: bold;
+}

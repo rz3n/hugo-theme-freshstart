@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "freshStart"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Start Page theme for Hugo"
+homepage = "https://github.com/rz3n/hugo-theme-freshstart"
+tags = ["start-page", "fast", "single-page", "responsive", "simple", "clean", "one-page", "light"]
+features = ["responsive"]
+min_version = "0.48.0"
+
+[author]
+  name = "Ricardo Franzen"
+  homepage = "https://rfranzen.com"

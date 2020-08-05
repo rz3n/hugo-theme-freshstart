@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+{{ if .Site.Params.searchEngines }}
+  <section class="search">
+    <h3>search</h3>
+    <div class="searchbox">
+      {{ range .Site.Params.searchEngines }}
+        {{ if .activated }}
+          <form autocomplete="off" method="get" action="{{ .url }}">
+            <i class="{{ .icon }}"></i>
+            <input type="text" name="q">
+          </form>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+
+
+<section class="cards">
+  {{ range .Site.Params.bookmarks }}
+  <div class="card">
+    <h3><i class="{{ .icon }}"></i> {{ .group }} </h3>
+    <ul>
+      {{ range .items }}
+        {{ if .icon }}
+        <li><a href="{{ .url }}"><i class="{{ .icon }}"></i> {{ .name }}</a></li>
+        {{ else }}
+        <li><a href="{{ .url }}">{{ .name }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+</section>
+
+{{ end }}
