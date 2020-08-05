@@ -2,10 +2,6 @@
 A clear and responsive theme for [Hugo](//gohugo.io/) witch provides a dynamic environment to manage bookmarks in a clean and fast start page.
 
 
-## Demo
-* [Demo](http://themes.gohugo.io/theme/freshstart/)
-
-
 ## Screenshot
 ![startPageColumns = false](https://raw.githubusercontent.com/rz3n/hugo-theme-freshstart/master/images/screenshot.png)
 
