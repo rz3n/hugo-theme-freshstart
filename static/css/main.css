@@ -123,17 +123,17 @@ header nav ul li {
 */
 .cards {
   display: grid;
-  font-size: 0.7rem;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
-  margin: 0 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 2rem 2rem 2rem;
+  place-items: top;
 }
 
 .card {
   backdrop-filter: blur(.2rem);
   background-color: rgba(30, 30, 30, 0.7);
   border-radius: 1rem;
-  margin: 1em;
+  display: grid;
   padding: 1rem;
 }
 
