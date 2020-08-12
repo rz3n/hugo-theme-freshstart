@@ -27,6 +27,7 @@ params:
   description: A description of your site
   favicon: /favicon.ico
 
+
   searchEngines:
     - name: Google
       activated: true
@@ -36,6 +37,21 @@ params:
       activated: true
       icon: fas fa-search
       url: https://www.duckduckgo.com
+
+
+  nav:
+    - name: Gmail
+      icon: fas fa-envelope red
+      url: https://mail.google.com
+
+    - name: Twitter
+      icon: fab fa-twitter aqua
+      url: https://twitter.com
+    
+    - name: Facebook
+      icon: fab fa-facebook blue
+      url: https://facebook.com
+
 
   bookmarks:
     - group: dev

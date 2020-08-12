@@ -32,7 +32,42 @@ h3 {
   html {
     font-size: 22px;
   }
-} 
+}
+
+
+/* --------------------------
+ * colors
+*/
+.amber        { color: rgb(255, 193, 7); }
+.aqua         { color: rgb(0, 255, 255); }
+.black        { color: rgb(0, 0, 0); }
+.blue         { color: rgb(33, 150, 243); }
+.blue-grey    { color: rgb(96, 125, 139); }
+.brown        { color: rgb(121, 85, 72); }
+.cyan         { color: rgb(0, 188, 212); }
+.dark-grey    { color: rgb(97, 97, 97); }
+.deep-orange  { color: rgb(255, 87, 34); }
+.deep-purple  { color: rgb(103, 58, 183); }
+.green        { color: rgb(76, 175, 80); }
+.grey         { color: rgb(158, 158, 158); }
+.indigo       { color: rgb(63, 81, 181); }
+.khaki        { color: rgb(240, 230, 140); }
+.light-blue   { color: rgb(135, 206, 235); }
+.light-green  { color: rgb(139, 195, 74); }
+.light-grey   { color: rgb(241, 241, 241); }
+.lime         { color: rgb(205, 220, 57); }
+.orange       { color: rgb(255, 152, 0); }
+.pale-blue    { color: rgb(221, 255, 255); }
+.pale-green   { color: rgb(221, 255, 221); }
+.pale-red     { color: rgb(255, 221, 221); }
+.pale-yellow  { color: rgb(255, 255, 204); }
+.pink         { color: rgb(233, 30, 99); }
+.purple       { color: rgb(156, 39, 176); }
+.red          { color: rgb(244, 67, 54); }
+.sand         { color: rgb(253, 245, 230); }
+.teal         { color: rgb(0, 150, 136); }
+.white        { color: rgb(255, 255, 255); }
+.yellow       { color: rgb(255, 235, 59); }
 
 
 /* --------------------------
@@ -47,7 +82,7 @@ h3 {
   visibility: hidden;
 }
 
-.shadow { box-shadow: 10px 20px 50px 10px #000; }
+.shadow { box-shadow: 10px 20px 50px 10px rgb(0, 0, 0); }
 
 
 /* --------------------------
@@ -59,34 +94,24 @@ header {
   font-size: 1rem;
   padding: 0.5rem;
 }
-header nav {
-  width: fit-content;
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 0.7rem;
 }
-header nav ul {
+
+nav ul {
   display: flex;
   flex-wrap: nowrap;
   list-style: none;
-}
-header nav ul li {
-  margin: 0.1rem 0.3rem;
+  margin: 0.1rem 0;
 }
 
-.datetime {
-  display: flex;
-  flex-direction: row-reverse;
-  font-size: 0.7rem;
-  text-align: center;
-}
-.date {
-  padding: 0 0.5rem;
-  border-right: solid 1px;
-  width: fit-content;
-}
-
-.time {
-  padding: 0 0.5rem;
-  width: fit-content;
-}
+.nav-left { margin-right: auto; }
+.nav-left ul li { padding: 0 0.3rem; }
+.nav-right ul li { padding: 0 0.6rem; }
 
 
 /* --------------------------
@@ -111,7 +136,7 @@ header nav ul li {
 .searchbox input {
   background: none;
   border: 0;
-  border-bottom: solid 3px #f44336;
+  border-bottom: solid 3px rgb(244, 67, 54);
   line-height: 26px;
   padding: 4px;
   width: 70%;
@@ -152,7 +177,7 @@ header nav ul li {
   list-style: none;
   column-gap: 0.3rem;
   columns: 4 100px;
- 
+
 }
 
 .card ul li {

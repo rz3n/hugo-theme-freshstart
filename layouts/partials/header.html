@@ -1,17 +1,28 @@
 
 <header>
-  <div class="datetime">
-    <div class="time">
-      <i class="far fa-clock"></i>&nbsp;
-      <span class="time-hours"></span> :
-      <span class="time-minutes"></span> :
-      <span class="time-seconds"></span>
+  <nav>
+    <div class="nav-left">
+      <ul>
+        {{ range .Site.Params.nav }}
+        <li><a href="{{ .url }}" title="{{ .name }}"><i class="{{ .icon }}"></i></a></li>
+        {{ end }}
+      </ul>
     </div>
-    <div class="date">
-      <i class="far fa-calendar"></i>&nbsp;
-      <span class="date-day"></span> .
-      <span class="date-month"></span> .
-      <span class="date-year"></span>
+    <div class="nav-right">
+      <ul class="datetime">
+        <li class="date">
+          <i class="far fa-calendar"></i>&nbsp;
+          <span class="date-day"></span> .
+          <span class="date-month"></span> .
+          <span class="date-year"></span>
+        </li>
+        <li class="time">
+          <i class="far fa-clock"></i>&nbsp;
+          <span class="time-hours"></span> :
+          <span class="time-minutes"></span> :
+          <span class="time-seconds"></span>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
 </header>
