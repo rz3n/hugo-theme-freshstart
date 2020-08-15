@@ -9,7 +9,7 @@
 }
 
 body {
-  background: url(/images/bg.jpg) top fixed no-repeat;
+  background: url(/images/bg.webp) top fixed no-repeat;
   background-size: cover;
   content-visibility: auto;
   font-size: 16px;
