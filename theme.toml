@@ -3,7 +3,7 @@
 
 name = "freshStart"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/rz3n/hugo-theme-freshstart/blob/master/LICENSE"
 description = "Start Page theme for Hugo"
 homepage = "https://github.com/rz3n/hugo-theme-freshstart"
 tags = ["start-page", "fast", "single-page", "responsive", "simple", "clean", "one-page", "light"]
